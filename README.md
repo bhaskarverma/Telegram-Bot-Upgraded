@@ -168,7 +168,7 @@ above, but start it with `@`)
 ### Require this package with Composer
 
 Install this package through [Composer].
-Edit your project's `composer.json` file to require `longman/telegram-bot`.
+Edit your project's `composer.json` file to require `apollyon/telegram-bot`.
 
 Create *composer.json* file
 ```json
@@ -177,7 +177,7 @@ Create *composer.json* file
     "type": "project",
     "require": {
         "php": ">=7.3",
-        "longman/telegram-bot": "*"
+        "apollyon/telegram-bot": "*"
     }
 }
 ```
@@ -188,7 +188,7 @@ and run `composer update`
 run this command in your command line:
 
 ```bash
-composer require longman/telegram-bot
+composer require apollyon/telegram-bot
 ```
 
 ### Choose how to retrieve Telegram updates
