@@ -383,6 +383,8 @@ $telegram->setUpdateFilter(function (Update $update, Telegram $telegram, &$reaso
 });
 ```
 
+If the update is denied, the command with name 'filtered' will be executed if present.
+
 The reason for denying an update can be defined with the `$reason` parameter. This text gets written to the debug log.
 
 ## Support
