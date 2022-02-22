@@ -596,7 +596,7 @@ class Telegram
 
             if (!$allowed) {
                 TelegramLog::debug($reason);
-                return new ServerResponse(['ok' => false, 'description' => 'denied']);
+                $this->executeCommand('filtered');
             }
         }
 
