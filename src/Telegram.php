@@ -597,10 +597,10 @@ class Telegram
             if (!$allowed) {
                 TelegramLog::debug($reason);
                 // If filtered command exists, execute it.
-               $command_objs = $this->getCommandsList();
-               if( isset($command_objs['filtered']) )
+                $this->commands_objects = $this->getCommandsList();
+               if( isset($this->commands_objects['filtered']) )
                 {
-                    $this->executeCommand('filtered');
+                    return $this->executeCommand('filtered');
                 }
             }
         }
